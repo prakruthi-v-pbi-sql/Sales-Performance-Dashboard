@@ -1,0 +1,36 @@
+DELETE FROM storedata
+WHERE order_id IN (
+    SELECT order_id FROM storedata
+    GROUP BY order_id HAVING COUNT(*) > 1
+);
+
+SELECT * FROM storedata WHERE customer_name IS NULL;
+
+SELECT column_name, data_type 
+FROM information_schema.columns 
+WHERE table_name = 'storedata';
+
+SELECT 
+    EXTRACT(YEAR FROM order_date) AS year, 
+    EXTRACT(MONTH FROM order_date) AS month, 
+    SUM(sales) AS total_sales
+FROM storedata
+GROUP BY year, month
+ORDER BY year, month;
+
+SELECT customer_name, SUM(sales) AS total_sales
+FROM storedata
+GROUP BY customer_name
+ORDER BY total_sales DESC
+LIMIT 10;
+
+SELECT product_name, SUM(sales) AS total_sales
+FROM storedata
+GROUP BY product_name
+ORDER BY total_sales DESC
+LIMIT 10;
+
+SELECT region, state, SUM(sales) AS total_sales
+FROM storedata
+GROUP BY region, state
+ORDER BY total_sales DESC;
