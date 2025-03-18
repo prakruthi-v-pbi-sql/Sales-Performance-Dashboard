@@ -19,7 +19,7 @@ This Power BI dashboard provides insights into:
 - **Power BI** (DAX Measures, Visualizations, Interactivity)  
 
 ## 📊 **Dashboard Preview**
-![Dashboard Screenshot](add_image_link_here)  
+![Dashboard Screenshot]
 
 ## 🛠️ **Technologies Used**
 🔹 PostgreSQL  
@@ -27,7 +27,7 @@ This Power BI dashboard provides insights into:
 🔹 DAX  
 
 ## 📎 **Dataset**
-📥 [Superstore Sales Dataset](add_link_here_if_available)  
+📥 [Superstore Sales Dataset]
 
 ## 🚀 **How to Use This Project**
 1️⃣ Download the `.pbix` file and open it in Power BI.  
@@ -35,6 +35,6 @@ This Power BI dashboard provides insights into:
 3️⃣ Explore the interactive dashboard in Power BI Service.  
 
 ## 🔗 **Connect with Me**
-📧 Email: [Your Email]  
-💼 LinkedIn: [Your LinkedIn Profile]  
-📂 Portfolio: [Your Portfolio Link]  
+📧 Email:prakruthiv26@gmail.com
+💼 LinkedIn: www.linkedin.com/in/prakruthi-v-b983a01bb 
+ 
